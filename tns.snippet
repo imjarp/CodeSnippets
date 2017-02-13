@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+      <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Throw ArgumentException on empty string</Title>
+      <Description>Throws ArgumentException if parameter is null or empty</Description>
+      <Shortcut>tns</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>arg</ID>
+          <Default>value</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[if (string.IsNullOrWhiteSpace($arg$)) throw new ArgumentException($$"El parámetro {nameof($arg$)} es obligatorio y no puede ser una cadena vacía", nameof($arg$));
+    $end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
