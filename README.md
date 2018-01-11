@@ -1,2 +1,2 @@
 # CodeSnippets
-Personal code c# snippets
+Personal code snippets
